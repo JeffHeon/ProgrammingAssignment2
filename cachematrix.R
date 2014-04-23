@@ -52,7 +52,7 @@ cacheSolve <- function(x, ...) {
 
   # Calculate the inverse from the matrix
   data <- x$get()
-  inverse <- solve(data)
+  inverse <- solve(data, ...)
   
   # Set the cached inverse for later retrievals
   x$setinverse(inverse)
